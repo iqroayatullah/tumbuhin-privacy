@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Penghapusan Data — Tumbuhin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary-green: #16A34A;
+    --dark-green: #0F5132;
+    --gold: #CA8A04;
+    --sky-top: #8ED1FC;
+    --sky-bottom: #DFF6E3;
+    --card-bg: #F4FBF6;
+    --border-soft: #DCEFE1;
+    --text-primary: #111827;
+    --text-secondary: #6B7280;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--text-primary);
+    line-height: 1.7;
+    background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-bottom) 100%);
+    min-height: 100vh;
+  }
+
+  .wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .seed {
+    font-size: 56px;
+    line-height: 1;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--dark-green);
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    color: var(--text-secondary);
+    font-size: 15px;
+    font-style: italic;
+  }
+
+  .updated {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-soft);
+    border-radius: 20px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2 .emoji { font-size: 20px; }
+
+  p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  p:last-child { margin-bottom: 0; }
+
+  ol, ul {
+    color: var(--text-secondary);
+    font-size: 15px;
+    padding-left: 22px;
+    margin-bottom: 12px;
+  }
+  li { margin-bottom: 10px; }
+  li:last-child { margin-bottom: 0; }
+
+  strong { color: var(--text-primary); font-weight: 600; }
+
+  .step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: var(--primary-green);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 13px;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+
+  .step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 14px;
+  }
+  .step:last-child { margin-bottom: 0; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border-soft);
+    color: var(--text-secondary);
+  }
+  th {
+    color: var(--text-primary);
+    font-weight: 600;
+    background: rgba(22, 163, 74, 0.06);
+  }
+
+  .highlight-box {
+    background: #FFF7E0;
+    border: 1px solid #FCE3A1;
+    border-radius: 14px;
+    padding: 16px 18px;
+    font-size: 14px;
+    color: #6B5A16;
+    margin-top: 16px;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-soft);
+  }
+  footer p { font-size: 13px; color: var(--text-secondary); }
+
+  @media (max-width: 480px) {
+    .wrapper { padding: 32px 16px 60px; }
+    .card { padding: 22px 20px; }
+    h1 { font-size: 22px; }
+    table { font-size: 13px; }
+    th, td { padding: 8px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <span class="seed">🌱</span>
+      <h1>Penghapusan Data — Tumbuhin</h1>
+      <p class="subtitle">Kelola uang, tumbuhkan mimpi.</p>
+    </header>
+    <p class="updated">Terakhir diperbarui: Juli 2026</p>
+
+    <div class="card">
+      <h2><span class="emoji">📍</span> Tentang Halaman Ini</h2>
+      <p>
+        Aplikasi <strong>Tumbuhin</strong> (dikembangkan oleh Muhammad Iqro' Ayatullah)
+        menyimpan seluruh data pengguna secara lokal di perangkat masing-masing.
+        Karena tidak ada server pusat yang menyimpan data pengguna, penghapusan data
+        dilakukan langsung melalui perangkat pengguna sendiri, seperti dijelaskan
+        di bawah ini.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><span class="emoji">🗑️</span> Cara Menghapus Data Anda</h2>
+      <p>Pilih salah satu metode berikut sesuai kebutuhan Anda:</p>
+
+      <p style="margin-top:20px;"><strong>Metode 1 — Hapus Seluruh Data (Uninstall Aplikasi)</strong></p>
+      <div class="step">
+        <span class="step-number">1</span>
+        <span>Buka pengaturan perangkat Android Anda, atau tekan lama ikon aplikasi Tumbuhin di homescreen.</span>
+      </div>
+      <div class="step">
+        <span class="step-number">2</span>
+        <span>Pilih <strong>"Uninstall"</strong> atau <strong>"Copot Pemasangan"</strong>.</span>
+      </div>
+      <div class="step">
+        <span class="step-number">3</span>
+        <span>Konfirmasi penghapusan. Seluruh data aplikasi (transaksi, tabungan, preferensi) akan <strong>terhapus permanen dan seketika</strong> dari perangkat Anda.</span>
+      </div>
+
+      <p style="margin-top:24px;"><strong>Metode 2 — Hapus Data Tertentu Tanpa Uninstall</strong></p>
+      <div class="step">
+        <span class="step-number">1</span>
+        <span>Buka aplikasi Tumbuhin, masuk ke menu <strong>Profil</strong>.</span>
+      </div>
+      <div class="step">
+        <span class="step-number">2</span>
+        <span>Untuk menghapus transaksi tertentu: buka menu <strong>Riwayat Transaksi</strong>, geser (swipe) transaksi yang ingin dihapus, lalu konfirmasi penghapusan.</span>
+      </div>
+      <div class="step">
+        <span class="step-number">3</span>
+        <span>Untuk menghapus seluruh data aplikasi tanpa uninstall: buka <strong>Pengaturan Android > Aplikasi > Tumbuhin > Penyimpanan > Hapus Data (Clear Data)</strong>.</span>
+      </div>
+
+      <div class="highlight-box">
+        💡 <strong>Tips:</strong> Sebelum menghapus data, Anda dapat mengekspor seluruh riwayat transaksi terlebih dahulu melalui menu <strong>Profil > Ekspor Data</strong> sebagai cadangan pribadi dalam format CSV.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="emoji">📊</span> Jenis Data dan Masa Retensi</h2>
+      <table>
+        <tr>
+          <th>Jenis Data</th>
+          <th>Disimpan Di</th>
+          <th>Masa Retensi</th>
+        </tr>
+        <tr>
+          <td>Transaksi (pemasukan/pengeluaran)</td>
+          <td>Lokal di perangkat</td>
+          <td>Selama aplikasi terinstal, atau sampai dihapus manual</td>
+        </tr>
+        <tr>
+          <td>Target &amp; kontribusi tabungan</td>
+          <td>Lokal di perangkat</td>
+          <td>Selama aplikasi terinstal, atau sampai dihapus manual</td>
+        </tr>
+        <tr>
+          <td>Nama panggilan &amp; preferensi</td>
+          <td>Lokal di perangkat</td>
+          <td>Selama aplikasi terinstal, atau sampai dihapus manual</td>
+        </tr>
+        <tr>
+          <td>Log kerusakan teknis (crash report)</td>
+          <td>Server pihak ketiga (Sentry)</td>
+          <td>Maksimal 90 hari, otomatis terhapus setelahnya</td>
+        </tr>
+      </table>
+      <p style="margin-top:16px;">
+        Tidak ada data pengguna yang disimpan di server milik developer Tumbuhin.
+        Satu-satunya data yang meninggalkan perangkat pengguna adalah log teknis
+        kerusakan aplikasi (tidak termasuk data finansial), yang dikelola oleh
+        layanan pemantauan pihak ketiga dan dihapus otomatis dalam 90 hari.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><span class="emoji">✉️</span> Butuh Bantuan?</h2>
+      <p>
+        Jika Anda mengalami kendala saat menghapus data, atau memiliki pertanyaan
+        lebih lanjut, silakan hubungi kami melalui email yang tercantum di halaman
+        listing aplikasi Tumbuhin di Google Play Store.
+      </p>
+    </div>
+
+    <footer>
+      <p>🌱 Tumbuhin — Kelola uang, tumbuhkan mimpi.</p>
+    </footer>
+  </div>
+</body>
+</html>
